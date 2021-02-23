@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-23T09:45:46.019Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="A0Do92oCQVzHVuRA4bBg" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-23T09:46:20.568Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="3kUhuAqE34u6qbtS3XeP" version="13.6.0" type="github">
   <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -246,7 +246,7 @@
         <mxCell id="nHzR_UdeMCzrL-gVibLt-180" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
           <mxGeometry x="55" y="1780" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-184" value="将当前bean从三级和二级缓存中移除，添加到一级缓存&lt;br&gt;同时将当前beanName添加到ResgiterSingletons集合中" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-184" value="将当前bean从三级和二级缓存中移除，添加到一级缓存" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="1830" as="sourcePoint" />
             <Array as="points">
