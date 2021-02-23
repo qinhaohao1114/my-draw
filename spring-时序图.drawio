@@ -1,1 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2021-02-23T02:29:39.428Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="wWCzAjQc2Ns8WsQdFpIN" version="13.6.0" type="github"><diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">jZNNb4MwDIZ/DcdJQLauPa6s7Tq167Ru6jmASzIFgkIodL9+SZPwITRpF2Q/duLYr/FQlLcbgUuy5ykwL/TT1kPPXhgu7mfqq8HVgIdFYEAmaGrQABzpD1joW1rTFKpRouScSVqOYcKLAhI5YlgI3ozTzpyNq5Y4gwk4JphN6Ymmkhg6Dx97/gI0I65yMFuYSI5dsu2kIjjlzQChlYciwbk0Vt5GwPTs3FzMufUf0e5hAgr5nwPiwE77193nKt5mb1/NOt4SuLO3XDCrbcMeejrE33qU5tXy6kahGii1WedsR8/AaKG8ZQmC5iBBqAiz+L1ny4ZQCccSJ/poo3ZEMSJzprxAmUo3idUR0fmM4bKi8a2qr4iApBYVvcAHVGY9NOW11JWiTnYNpyNx/YGQ0A6QHdEGuHqnuKoUG51btey6Bsj6TS9+4FtGBsIjB7FduKy7utdEGVYW5/by32KDfwitfgE=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-02-23T02:46:38.360Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="yxjfN1a_w1mBH-dA7V8x" version="13.6.0" type="github">
+  <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
+    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-6" value="&lt;span style=&quot;font-size: 11px&quot;&gt;annotationApplicationContext&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-13" value="&lt;span style=&quot;text-align: left&quot;&gt;register默认的内置配置类和传入的配置类&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-6" target="nHzR_UdeMCzrL-gVibLt-10">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="90" y="70" as="sourcePoint" />
+            <mxPoint x="150" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-10" value="annotatedBeanDefinitionReader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="314" y="100" width="170" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-27" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;EventListenerMethodProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="87" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="112" y="220" />
+            </Array>
+            <mxPoint x="92" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-31" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;DefaultEventListenerFactory&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+          <mxGeometry x="0.0769" y="5" relative="1" as="geometry">
+            <mxPoint x="86" y="260" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="111" y="260" />
+            </Array>
+            <mxPoint x="91" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-19" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;ConfigurationClassPostProcessor&lt;/font&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="401" y="180" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="426" y="180" />
+            </Array>
+            <mxPoint x="406" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-23" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;AutowiredAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="401" y="230" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="426" y="230" />
+            </Array>
+            <mxPoint x="406" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-25" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;CommonAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="401" y="280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="426" y="280" />
+            </Array>
+            <mxPoint x="406" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
