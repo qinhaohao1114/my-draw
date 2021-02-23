@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-23T09:19:50.917Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="dp9uMy9Fq5MwsOzQALVP" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-23T09:31:11.581Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="2DW46I6Pr114CM5jsoZd" version="13.6.0" type="github">
   <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -235,7 +235,7 @@
           <mxGeometry x="55" y="940" width="10" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-89" value="AbstractAutowireCapableBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
-          <mxGeometry x="1630" y="100" width="210" height="1600" as="geometry" />
+          <mxGeometry x="1630" y="100" width="210" height="1660" as="geometry" />
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-94" value="doCreateBean开始创建bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry relative="1" as="geometry">
@@ -304,41 +304,41 @@
         <mxCell id="nHzR_UdeMCzrL-gVibLt-124" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry x="100" y="1380" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-128" value="BeanPostProcessor.postProcessBeforeInitialization前置方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-128" value="BeanPostProcessor.postProcessBeforeInitialization前置方法&lt;br&gt;1、beanFactory初始化的时候会注入ApplicationContextAwareProcessor,&lt;br&gt;该类定义了执行Aware相关接口的方法&lt;br&gt;2、environmentAware,serEnvironment&lt;br&gt;3、EmbeddedValueResolverAware.setEmbeddedValueResolver&lt;br&gt;4、ResourceLoaderAware.setResourceLoader&lt;br&gt;5、ApplicationEventPublisherAware.setApplicationEventPublisher&lt;br&gt;6、MessageSurceAware.setMessageSource&lt;br&gt;7、ApplicationContextAware.setApplicationContext" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="105" y="1430" as="sourcePoint" />
+            <mxPoint x="110" y="1470" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="130" y="1430" />
+              <mxPoint x="135" y="1470" />
             </Array>
-            <mxPoint x="110" y="1450" as="targetPoint" />
+            <mxPoint x="115" y="1490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-129" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
-          <mxGeometry x="100" y="1440" width="10" height="20" as="geometry" />
+          <mxGeometry x="100" y="1480" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-131" value="调用InitializaingBean.afterPropertiesSet" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-140" value="如果包含init方法，调用init方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="105" y="1480" as="sourcePoint" />
+            <mxPoint x="105" y="1600" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="130" y="1480" />
+              <mxPoint x="130" y="1600" />
             </Array>
-            <mxPoint x="110" y="1500" as="targetPoint" />
+            <mxPoint x="110" y="1620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-132" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
-          <mxGeometry x="100" y="1490" width="10" height="20" as="geometry" />
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-161" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+          <mxGeometry x="100" y="1610" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-134" value="如果包含init方法，调用init方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-163" value="调用InitializaingBean.afterPropertiesSet" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="105" y="1520" as="sourcePoint" />
+            <mxPoint x="105" y="1560" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="130" y="1520" />
+              <mxPoint x="130" y="1560" />
             </Array>
-            <mxPoint x="110" y="1540" as="targetPoint" />
+            <mxPoint x="110" y="1580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-135" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
-          <mxGeometry x="100" y="1530" width="10" height="20" as="geometry" />
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-164" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+          <mxGeometry x="100" y="1570" width="10" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-90" value="createBean创建bean" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
           <mxGeometry width="60" relative="1" as="geometry">
