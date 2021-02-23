@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-23T08:53:02.028Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="zAg-__BVWiQyfb5pr1-s" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-23T08:56:40.235Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="qTjkdz0GLM-jIdVgd8Bz" version="13.6.0" type="github">
   <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -273,10 +273,11 @@
         <mxCell id="nHzR_UdeMCzrL-gVibLt-104" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry x="100" y="1150" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-106" value="针对autowire字段和方法注入的依赖进行注入" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89" target="nHzR_UdeMCzrL-gVibLt-105">
-          <mxGeometry width="80" relative="1" as="geometry">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-106" value="针对需要自动注入的字段和方法注入的依赖进行注入，这一步&lt;br&gt;可以进行扩展：&lt;br&gt;1、循环调用InstantiationAwareBeanPostProcessor.postProcess&lt;br&gt;ties方法进行注入，这一步可以增加自己的实现类进行注入" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;align=left;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89" target="nHzR_UdeMCzrL-gVibLt-105">
+          <mxGeometry x="-0.7841" width="80" relative="1" as="geometry">
             <mxPoint x="100" y="1230" as="sourcePoint" />
             <mxPoint x="180" y="1230" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-113" value="针对propertyValues进行注入，对于Autowired但是带有&lt;br&gt;set方法的属性，也会优先包装成该类型进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
@@ -309,7 +310,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-105" value="AutowiredAnnotationBeanPostProcessor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
-          <mxGeometry x="1990" y="100" width="222" height="1310" as="geometry" />
+          <mxGeometry x="2000" y="100" width="222" height="1310" as="geometry" />
         </mxCell>
         <mxCell id="nHzR_UdeMCzrL-gVibLt-108" value="找到被autowired注解的方法和属性，包装成InjectElement&lt;br&gt;循环调用inject方法进行注入，这一步会在beanFactory中查找&lt;br&gt;依赖的类型，最后通过反射调用属性、方法进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-105">
           <mxGeometry relative="1" as="geometry">
