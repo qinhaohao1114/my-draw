@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-23T08:19:23.381Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="1uU6swFkO39JVlym8p50" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-23T08:26:25.136Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="N7PQ7jn_whC-mMK8CMp9" version="13.6.0" type="github">
   <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -249,7 +249,7 @@
         <mxCell id="nHzR_UdeMCzrL-gVibLt-95" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry x="100" y="1000" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-97" value="调用构造方法创建bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-97" value="调用构造方法创建bean&lt;br&gt;1、当只含有带参数构造函数，调用带参数构造函数&lt;br&gt;2、即包含带参数也包含未带参数构造函数，调用无参&lt;br&gt;构造函数&lt;br&gt;3、包含带参数和未带参数，但是在带参数上注解Autowired，&lt;br&gt;则调用带参数的构造函数&lt;br&gt;4、多个构造函数上注解autowired，报错" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="1049" as="sourcePoint" />
             <Array as="points">
