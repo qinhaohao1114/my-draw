@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T02:58:26.360Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="LWfvBVjzeNOYhhP4_P5y" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T02:58:57.170Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="0HTdby9t0pn5RaVJxrU7" version="13.6.0" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1186" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -41,7 +41,7 @@
         <mxCell id="g8QJIo1ShxsMupF4HB6s-18" value="addwatiter将当前线程包装成node加入到队列尾" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="320" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="g8QJIo1ShxsMupF4HB6s-20" value="acquireQueued继续获取锁" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-20" value="acquireQueued继续获取锁，获取不到则将当前线程阻塞" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-23" value="&lt;h1 style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;1、传入当前node，以及int state&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;2、for无限循环，取到当前node的前置节点，判断是不是头节点，是则表明此时队列只有这一个线程，继续尝试获取锁。获取成功，把当前节点换成头节点，清空线程值，返回执行业务方法。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、如果还有别的线程等待，则将前一个线程的状态置为sigal，然后调用lockSupport.park锁住当前线程，底层调用UNSAFE.park加锁&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
