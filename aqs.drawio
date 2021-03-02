@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T03:11:11.655Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="RD5LT2h5CR354-qcXayj" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T03:12:17.398Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="WAAghFx_59TrwPN4LDUk" version="13.6.0" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1186" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,11 +103,17 @@
         <mxCell id="g8QJIo1ShxsMupF4HB6s-37" value="这一步由子类实现获取锁的逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="990" y="180" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g8QJIo1ShxsMupF4HB6s-38" value="检查是否需要唤醒后续节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="310" width="120" height="70" as="geometry" />
-        </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-40" value="获取头节点，如果头节点不为空，并且waitStatus!=0，证明后续还有线程需要被唤醒" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1010" y="330" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.446;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="g8QJIo1ShxsMupF4HB6s-41" target="g8QJIo1ShxsMupF4HB6s-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-41" value="&lt;span&gt;检查是否需要唤醒后续节点&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="310" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-44" value="unparkSuccessor唤醒后续节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.5" y="430" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
