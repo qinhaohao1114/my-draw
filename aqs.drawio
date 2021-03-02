@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T03:42:00.869Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="qUpqjrXzQCUMf7pzCAzu" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T06:32:00.574Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="OJEeNYyO8VNPZxmtZ5EZ" version="13.6.0" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
-    <mxGraphModel dx="1186" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-2" value="aquire获取锁" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-12" value="没获取到锁" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -82,9 +82,10 @@
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g8QJIo1ShxsMupF4HB6s-26" target="g8QJIo1ShxsMupF4HB6s-47">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="880" as="targetPoint" />
             <Array as="points">
               <mxPoint x="260" y="500" />
-              <mxPoint x="260" y="920" />
+              <mxPoint x="260" y="870" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -129,13 +130,46 @@
           <mxGeometry x="867.5" y="430" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-46" value="&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;unparkSuccessor（Node node)&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;1、判断节点状态，如果小于0，则将当前节点设置为0。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;2、取下一个节点，如果下一个节点为null或者waitStatus大于零。则从链表尾部向前找，找到前面第一个应该被唤醒的线程&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;3、如果有线程需要被唤醒，则调用LockSupport.unpark唤醒线程&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1040" y="390" width="190" height="170" as="geometry" />
+          <mxGeometry x="1020" y="390" width="190" height="170" as="geometry" />
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-47" value="cancelAcquire，取消" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="890" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g8QJIo1ShxsMupF4HB6s-50" value="&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;cancelAcquire&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;1、将当前线程置为null，并且将当前线程状态置为cancelled&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;2、将当前线程移除掉。如果还有后续线程需要唤醒，尝试唤醒&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="860" width="190" height="120" as="geometry" />
+          <mxGeometry x="430" y="800" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="g8QJIo1ShxsMupF4HB6s-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-54" value="acquireShared获取锁" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-55" value="共享模式下获取锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1130" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-63" value="获取成功" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g8QJIo1ShxsMupF4HB6s-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-66" value="获取失败，在共享不间断模式下获取锁" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g8QJIo1ShxsMupF4HB6s-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-58" value="tryAcquireShared获取锁" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1230" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-62" value="&lt;h1&gt;返回值&lt;/h1&gt;&lt;div&gt;&lt;/div&gt;1、在失败时返回负值&lt;br&gt;2、获取成功，后续不能获取锁返回0&lt;br&gt;3、获取成功，后续还可以获取，返回正值" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1215" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-67" value="doAcquireShared" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g8QJIo1ShxsMupF4HB6s-68" value="&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;doAcquireShared&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;1、以共享模式加入到队列&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;2、获取前置节点，如果前置节点是head，说明在队列头，则继续获取锁&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;3、获取到锁之后，将当前head设置为头，并且检验后续是否可能获取成功，可以则唤醒下一个线程。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;4、判断是否被中断，如果被中断，重置中断状态&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1410" width="190" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
