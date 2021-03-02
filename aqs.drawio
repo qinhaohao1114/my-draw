@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T09:58:00.299Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="IKFwRU_FXFP6vKGdM5rU" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T09:58:45.274Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="BEAFNI8q6Shje6_GCRzF" version="13.6.0" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1940" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -280,6 +280,9 @@
         </mxCell>
         <mxCell id="hiZc3qiQg5HFzUYzTwC--29" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;_WaitSet，入口等待队列&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="380" y="2040" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiZc3qiQg5HFzUYzTwC--49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hiZc3qiQg5HFzUYzTwC--31" target="hiZc3qiQg5HFzUYzTwC--32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hiZc3qiQg5HFzUYzTwC--31" value="wait条件变量" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="2350" width="120" height="60" as="geometry" />
