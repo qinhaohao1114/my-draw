@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-08T10:08:02.989Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="hkQmPmf8CClDH27RagO-" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T10:10:30.933Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="UEY-uphbIEgGNvqlQQ_T" version="14.4.4" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -353,7 +353,7 @@
         <mxCell id="HIOaU3LXZiTxXAqMaiI3-10" value="调用tryReleaseShared" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="2890" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HIOaU3LXZiTxXAqMaiI3-12" value="&lt;h1&gt;readLock.unlock&lt;/h1&gt;&lt;div&gt;&amp;nbsp; 获取当前线程。如果第一个reader为当前线程。如果只拿了一次锁。firstReader为null。&lt;/div&gt;&lt;div&gt;&amp;nbsp; 否则拿到所有的count，count--。&lt;/div&gt;&lt;div&gt;然后拿state。设置state，设置成功，如果state为0，返回true，否则返回false。&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-12" value="&lt;h1&gt;readLock.unlock&lt;/h1&gt;&lt;div&gt;&amp;nbsp; 获取当前线程。如果第一个reader为当前线程。如果只拿了一次锁。firstReader为null。&lt;/div&gt;&lt;div&gt;&amp;nbsp; 否则拿到所有的count，count--。&lt;/div&gt;&lt;div&gt;然后拿state。设置state，设置成功，如果state为0，返回true，否则返回false。返回true会唤醒后续节点，否则不唤醒&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="900" y="2860" width="280" height="140" as="geometry" />
         </mxCell>
       </root>
