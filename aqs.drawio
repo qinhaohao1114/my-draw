@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-08T10:23:40.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="Lqb9d6goH5Zl2IFONFM7" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T10:26:14.069Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="t7qac6wOBeqRD8VK7e-W" version="14.4.4" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -375,6 +375,12 @@
         </mxCell>
         <mxCell id="HIOaU3LXZiTxXAqMaiI3-18" value="&lt;h1&gt;tryAcquire&lt;/h1&gt;&lt;div&gt;1、获取当前线程，获取state，获取写锁数量。&lt;/div&gt;&lt;div&gt;2、如果state!=0，如果写锁为0，或者当前线程不是独占线程，返回false，如果count&amp;gt;max，报错。否则设置state&lt;/div&gt;&lt;div&gt;3、如果c==0，判断写锁是否应该堵塞，设置值，设置成功，将当前线程设置为独占线程。&lt;/div&gt;&lt;div&gt;总结：判断是否有其他锁，如果有并且不是重入，锁住&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-220" y="2860" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-19" value="tryRelease" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="3090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-21" value="&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;tryRelease&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;1、获取state，如果state更新后的值为0，证明当前线程释放锁后就没有持有锁的了。如果这样，就把独占线程设置为空。同时设置下一次的值。否则只设置下一次的值，只有在新值为0的时候，返回true&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="3090" width="190" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
