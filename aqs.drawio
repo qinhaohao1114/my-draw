@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-08T10:12:11.745Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="LTSRb2L4a7GtqjFfkKxM" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T10:23:40.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="Lqb9d6goH5Zl2IFONFM7" version="14.4.4" type="github">
   <diagram id="loOCjp3n1O7ZFhneR4th" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -355,6 +355,26 @@
         </mxCell>
         <mxCell id="HIOaU3LXZiTxXAqMaiI3-12" value="&lt;h1&gt;readLock.unlock&lt;/h1&gt;&lt;div&gt;&amp;nbsp; 获取当前线程。如果第一个reader为当前线程。如果只拿了一次锁。firstReader为null。&lt;/div&gt;&lt;div&gt;&amp;nbsp; 否则拿到所有的count，count--。&lt;/div&gt;&lt;div&gt;然后拿state。设置state，设置成功，如果state为0，返回true，否则返回false。返回true会唤醒后续节点，否则不唤醒。&lt;/div&gt;&lt;div&gt;state！=0，要么读线程持有锁，要么写线程持有锁，不可能同时有。所以当读线程锁为0的时候，就唤醒后续阻塞线程&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="900" y="2860" width="280" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HIOaU3LXZiTxXAqMaiI3-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-330" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-13" value="writeLock.lock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="2650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HIOaU3LXZiTxXAqMaiI3-15" target="HIOaU3LXZiTxXAqMaiI3-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-15" value="调用acquire" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="2750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-16" value="调用tryAcquire" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="2890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HIOaU3LXZiTxXAqMaiI3-18" value="&lt;h1&gt;tryAcquire&lt;/h1&gt;&lt;div&gt;1、获取当前线程，获取state，获取写锁数量。&lt;/div&gt;&lt;div&gt;2、如果state!=0，如果写锁为0，或者当前线程不是独占线程，返回false，如果count&amp;gt;max，报错。否则设置state&lt;/div&gt;&lt;div&gt;3、如果c==0，判断写锁是否应该堵塞，设置值，设置成功，将当前线程设置为独占线程。&lt;/div&gt;&lt;div&gt;总结：判断是否有其他锁，如果有并且不是重入，锁住&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="2860" width="280" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
