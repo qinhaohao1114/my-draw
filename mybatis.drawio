@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-16T06:09:11.752Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="UTWFs7-KqSFOt7m6DJK5" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-16T06:18:53.177Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="xx2FmqCa5uGATGXPKmTw" version="14.4.6" type="github">
   <diagram id="0CGYzb4iScq04L-ZYQaI" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,7 +75,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-35" value="cachingExcutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="588" width="100" height="492" as="geometry" />
+          <mxGeometry x="530" y="588" width="100" height="632" as="geometry" />
         </mxCell>
         <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
           <mxGeometry x="45" y="312" width="10" height="18" as="geometry" />
@@ -96,6 +96,40 @@
             <mxPoint x="50" y="352" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="75" y="352" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-48" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry x="45" y="432" width="10" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-49" value="&lt;br style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;span&gt;query&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;1、查看是否开启了二级缓存，&lt;br&gt;开启了从二级缓存获取，获取到直接返回。&lt;/span&gt;&lt;br style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;2、获取不到，从数据库查询&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-48" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry x="0.0769" y="5" relative="1" as="geometry">
+            <mxPoint x="50" y="412" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="412" />
+              <mxPoint x="75" y="412" />
+              <mxPoint x="75" y="432" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-53" value="query" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-35" target="PqKnC0BrW8zJ7Qyt5Rqo-52">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="492" as="sourcePoint" />
+            <mxPoint x="110" y="492" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-52" value="SimpleExcutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="810" y="588" width="100" height="612" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-54" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-52">
+          <mxGeometry x="50" y="512" width="10" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-55" value="从一级缓存获取&lt;br&gt;localCache，获取不到&lt;br&gt;从数据库获取" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-54" parent="PqKnC0BrW8zJ7Qyt5Rqo-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="502" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="502" />
             </Array>
           </mxGeometry>
         </mxCell>
