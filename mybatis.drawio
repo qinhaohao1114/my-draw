@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-16T10:07:48.852Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="tN7NRNuPnE0_8inoLdpF" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-16T10:29:02.936Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Aja00-YbN-gXyIe1J3_9" version="14.4.6" type="github">
   <diagram id="0CGYzb4iScq04L-ZYQaI" name="Page-1">
-    <mxGraphModel dx="1940" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -199,6 +199,45 @@
             <mxPoint x="1470" y="1510" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-77" target="PqKnC0BrW8zJ7Qyt5Rqo-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-77" value="sqlSession" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1220" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-78" target="PqKnC0BrW8zJ7Qyt5Rqo-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-78" value="excutor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1320" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-79" value="statementHandler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1420" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-80" target="PqKnC0BrW8zJ7Qyt5Rqo-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-80" value="parameterHandler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="1520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-81" target="PqKnC0BrW8zJ7Qyt5Rqo-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-81" value="ResultSetHandler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="1520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-82" value="typeHandler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-155" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-88" value="&lt;ul&gt;&lt;li&gt;职责：Mybaties工作顶层的api接口，作为会话访问，完成增删改查功能&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1210" width="236" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-89" value="&lt;ul&gt;&lt;li&gt;mybatis执行器，是mybatis的核心，负责sql的动态语句的生成和查询缓存的维护&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1310" width="236" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-90" value="&lt;ul&gt;&lt;li&gt;负责处理jdbc的statement交互，包括对statement设置参数&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1410" width="236" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
