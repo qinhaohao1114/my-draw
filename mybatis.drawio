@@ -1,11 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-03-16T05:41:35.229Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="L5dxVBdQ0G9lGYXIofzg" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-16T06:09:01.835Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="sKCM9H0S5pbAuN-_hN7u" version="14.4.6" type="github">
   <diagram id="0CGYzb4iScq04L-ZYQaI" name="Page-1">
-    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-1" value="sqlSessionFactory.openSqlSession获取sqlSession" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="90" width="660" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-3" target="PqKnC0BrW8zJ7Qyt5Rqo-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-3" value="sqlSession.selectList" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="190" width="120" height="60" as="geometry" />
@@ -14,6 +17,86 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="360" as="sourcePoint" />
             <mxPoint x="170" y="151" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.408;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PqKnC0BrW8zJ7Qyt5Rqo-7" target="PqKnC0BrW8zJ7Qyt5Rqo-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-7" value="configuration.getMappedStatement" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="290" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-9" value="excutor.query" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-14" value="&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;cachingExcutor.query&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;1、mappedStatement.getBoundSql&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400 ; text-align: center&quot;&gt;2、createCacheKey&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、是否使用二级缓存，使用则从二级缓存获取&lt;/div&gt;&lt;div&gt;4、二级缓存获取不到，尝试从一级缓存获取，获取到直接返回，获取不到查询数据库&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="360" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-16" value="sqlSessionFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="587.5" width="160" height="297.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-16">
+          <mxGeometry x="75" y="110" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-25" value="&lt;span style=&quot;font-size: 12px ; text-align: center ; background-color: rgb(248 , 249 , 250)&quot;&gt;openSqlSession&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-24" parent="PqKnC0BrW8zJ7Qyt5Rqo-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="90" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-36" value="selectList" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-16" target="PqKnC0BrW8zJ7Qyt5Rqo-19">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="80" y="162.5" as="sourcePoint" />
+            <mxPoint x="140" y="162.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-19" value="DefaultSqlSession" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="586.25" width="90" height="463.75" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-33" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-19">
+          <mxGeometry x="40" y="213.75" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-34" value="configration.getMappendStatement" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-33" parent="PqKnC0BrW8zJ7Qyt5Rqo-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="173.75" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="45" y="174" />
+              <mxPoint x="75" y="174" />
+              <mxPoint x="75" y="214" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-37" value="query(ms,param....)" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-19" target="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry x="0.1132" y="10" width="60" relative="1" as="geometry">
+            <mxPoint x="50" y="273.75" as="sourcePoint" />
+            <mxPoint x="110" y="273.75" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-35" value="cachingExcutor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="588" width="100" height="492" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry x="45" y="312" width="10" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-41" value="ms.getBoundSql" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-40" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="292" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="292" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry x="45" y="362" width="10" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="PqKnC0BrW8zJ7Qyt5Rqo-45" value="createKey" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="PqKnC0BrW8zJ7Qyt5Rqo-44" parent="PqKnC0BrW8zJ7Qyt5Rqo-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="352" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="352" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
