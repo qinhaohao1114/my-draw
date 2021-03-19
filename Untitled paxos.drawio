@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:11:43.904Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="SZhasvR0OXcqT3GpqiBm" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:12:28.399Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="ZGVH6_xy36xdOdgAw8v0" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,6 +103,12 @@
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-51" value="Acceptor可以接受（accept）提案；如果某个提案被选定（chosen），那么该提案里的value就被选定了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="990" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-52" value="Learners：最终策略学习者" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1080" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-57" value="学习者充当该协议的复制因素" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1100" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
