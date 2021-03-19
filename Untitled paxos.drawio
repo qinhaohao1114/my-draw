@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:30:38.456Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="KR6ZPmI5sk7Lr2Gndpfm" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:33:11.875Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="af1ZXskfgZZDQQ67e0nn" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -223,16 +223,16 @@
         <mxCell id="M_0ubYgLpEhorPyLPJEU-99" value="1个acceptor，先到先得，单点故障" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1020" y="1290" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-100" value="proposer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-100" value="proposer1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="720" y="1520" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-101" value="proposer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-101" value="proposer2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="720" y="1610" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-102" value="proposer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-102" value="proposer3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="720" y="1700" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-103" value="acceptor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-103" value="acceptor2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="920" y="1590" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-104" value="value1" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="M_0ubYgLpEhorPyLPJEU-103">
@@ -256,10 +256,10 @@
         <mxCell id="M_0ubYgLpEhorPyLPJEU-107" value="多个accotor：如何保证在多个accptor和proposer情况下选定一个值" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1030" y="1610" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-108" value="acceptor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-108" value="acceptor3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="930" y="1714" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-109" value="acceptor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-109" value="acceptor1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="920" y="1490" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-110" value="value1" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;" edge="1" parent="1" target="M_0ubYgLpEhorPyLPJEU-109">
@@ -300,6 +300,39 @@
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-116" value="首先我们希望即使只有一个Proposer提出了一个value，该value也最终被选定。&lt;br&gt;&lt;br&gt;P1：一个Acceptor必须接受它收到的第一个提案。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="710" y="1840" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M_0ubYgLpEhorPyLPJEU-117" target="M_0ubYgLpEhorPyLPJEU-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-117" value="acceptor1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M_0ubYgLpEhorPyLPJEU-118" target="M_0ubYgLpEhorPyLPJEU-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-118" value="acceptor2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M_0ubYgLpEhorPyLPJEU-119" target="M_0ubYgLpEhorPyLPJEU-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-119" value="acceptor3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-120" value="proposer1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="770" y="2070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-121" value="proposer2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="910" y="2070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-122" value="proposer3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="2070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-126" value="问题：多个提案被选定" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1216" y="1930" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-127" value="&lt;br&gt;&lt;br&gt;P2：规定：一个提案被选定需要被半数以上的Acceptor接受" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="715" y="2190" width="490" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
