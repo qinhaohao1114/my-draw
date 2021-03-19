@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:09:14.160Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="UBHlgkMKmD7bJZtzaW5l" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:11:43.904Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="SZhasvR0OXcqT3GpqiBm" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,6 +88,21 @@
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-41" value="client客户端" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="60" y="700" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-45" value="客户端向分布式系统发出请求 ，并等待响应 。例如，对分布式文件服务器中文件的写请求。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="730" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-46" value="&lt;div&gt;提案者提倡客户请求，试图说服Acceptor对此达成一致，并在发生冲突时充当协调者以推动协议向前发&lt;/div&gt;&lt;div&gt;展&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="850" width="380" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-47" value="&lt;span&gt;提案者(proposer)&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="820" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-48" value="Acceptor决策者，批准提案" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="960" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-51" value="Acceptor可以接受（accept）提案；如果某个提案被选定（chosen），那么该提案里的value就被选定了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="990" width="270" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
