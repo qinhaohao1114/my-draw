@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:20:26.342Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="vXhVCKw1tSOL1d9fP-Uz" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:22:20.481Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="8M1D6bA_FJ2MWcCFYz_Y" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -186,6 +186,9 @@
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-84" value="对某个数据的值达成一致--最终要做到每个proposer、acceptor、和leaner都认为同一个value被选定" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1100" y="1010" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-88" value="&lt;ul&gt;&lt;li&gt;在这些被提出的提案中，只有一个会被选定&lt;/li&gt;&lt;li&gt;如果没有提案被提出，就不应该有被选定的提案&lt;br&gt;&lt;/li&gt;&lt;li&gt;当一个提案被选定后，那么所有进程都应该能学习（learn）到这个被选定的value&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1080" width="290" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
