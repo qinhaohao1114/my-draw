@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:29:54.810Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="7wDEd1gC6abv_IimSRiu" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:30:38.456Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="KR6ZPmI5sk7Lr2Gndpfm" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -297,6 +297,9 @@
             <mxPoint x="800" y="1730" as="sourcePoint" />
             <mxPoint x="941.7157287525379" y="1568.2842712474621" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-116" value="首先我们希望即使只有一个Proposer提出了一个value，该value也最终被选定。&lt;br&gt;&lt;br&gt;P1：一个Acceptor必须接受它收到的第一个提案。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1840" width="490" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
