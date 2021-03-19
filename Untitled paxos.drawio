@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:15:28.925Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="FVUCTnFaw9Ztu8aTPJJm" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-19T07:16:53.703Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="mjo3b9wrFRoSA69Lhlye" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,16 +110,16 @@
         <mxCell id="M_0ubYgLpEhorPyLPJEU-57" value="学习者充当该协议的复制因素" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="1100" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-58" value="三种角色" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-58" value="三种角色" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="787" y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-59" value="proposer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-59" value="proposer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="620" y="830" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-60" value="accepter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-60" value="accepter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="790" y="830" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-61" value="leaner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-61" value="leaner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="950" y="830" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="M_0ubYgLpEhorPyLPJEU-67" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;多个&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="M_0ubYgLpEhorPyLPJEU-58" target="M_0ubYgLpEhorPyLPJEU-59">
@@ -139,6 +139,18 @@
             <mxPoint x="860" y="770" as="sourcePoint" />
             <mxPoint x="860" y="840" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-70" value="提案&lt;br&gt;proposer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-71" value="" style="line;strokeWidth=1;rotatable=0;dashed=0;labelPosition=right;align=left;verticalAlign=middle;spacingTop=0;spacingLeft=6;points=[];portConstraint=eastwest;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="720" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-72" value="" style="line;strokeWidth=1;rotatable=0;dashed=0;labelPosition=right;align=left;verticalAlign=middle;spacingTop=0;spacingLeft=6;points=[];portConstraint=eastwest;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="730" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-73" value="value" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="700" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
