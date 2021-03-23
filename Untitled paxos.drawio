@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T07:33:11.875Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="af1ZXskfgZZDQQ67e0nn" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T07:24:52.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="pYKvWEcS31M1b2XWQGqE" version="14.4.6" type="github">
   <diagram id="8dDou3pMWxGuU96nbHgM" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -331,8 +331,8 @@
         <mxCell id="M_0ubYgLpEhorPyLPJEU-126" value="问题：多个提案被选定" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
           <mxGeometry x="1216" y="1930" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M_0ubYgLpEhorPyLPJEU-127" value="&lt;br&gt;&lt;br&gt;P2：规定：一个提案被选定需要被半数以上的Acceptor接受" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="715" y="2190" width="490" height="40" as="geometry" />
+        <mxCell id="M_0ubYgLpEhorPyLPJEU-127" value="P2：规定：一个提案被选定需要被半数以上的Acceptor接受&lt;br&gt;一个Acceptor必须能够接受不止一个提案！" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="715" y="2190" width="490" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
