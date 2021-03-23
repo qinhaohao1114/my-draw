@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T07:49:05.804Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="ZrPqcbJSio9jWJZg9q0r" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T07:50:43.100Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="AFG6ZlJdjTkwkfplZoPp" version="14.4.6" type="github">
   <diagram id="wmskmq6iXbEiBQbnxRAv" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -85,6 +85,18 @@
               <mxPoint x="860" y="250" />
             </Array>
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5n4lhrQsMyBDXj8TD-eI-26" value="&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 10px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 10px&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-size: 10px&quot;&gt;eurekaServerBootstrap.&lt;/span&gt;contextInitialized&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="440" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5n4lhrQsMyBDXj8TD-eI-28" value="调用bootstrap进行初始化操作" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.35;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="860" y="350" as="sourcePoint" />
+            <mxPoint x="860" y="444" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="860" y="404" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
