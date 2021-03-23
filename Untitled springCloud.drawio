@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T10:08:07.370Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="WxuxypCEYQDYGZzi8nzn" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T10:08:49.917Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="BNR628u_e8mSS6UQlkwr" version="14.4.6" type="github">
   <diagram id="wmskmq6iXbEiBQbnxRAv" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5n4lhrQsMyBDXj8TD-eI-13" value="&lt;font style=&quot;font-size: 12px&quot;&gt;同时会监听环境更改的事件，发现eurakaserver变更，会重新拉取服务.&lt;br&gt;start方法中会新建线程池，启动守护线程，每隔&lt;/font&gt;&lt;font color=&quot;#1750eb&quot; face=&quot;JetBrains Mono, monospace&quot; style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;10*60*1000ms去进行一次同步&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5n4lhrQsMyBDXj8TD-eI-13" value="&lt;font style=&quot;font-size: 12px&quot; color=&quot;#ff3333&quot;&gt;同时会监听环境更改的事件，发现eurakaserver变更，会重新拉取服务.&lt;br&gt;start方法中会新建线程池，启动守护线程，每隔&lt;/font&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#ff3333&quot;&gt;10*60*1000ms去进行一次同步&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="380" y="430" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5n4lhrQsMyBDXj8TD-eI-15" value="&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;EurekaServerContext&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -138,7 +138,7 @@
         <mxCell id="5n4lhrQsMyBDXj8TD-eI-42" value="&lt;pre style=&quot;background-color: #c7edcc ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 11.3pt&quot;&gt;applicationInfoManager.setInstanceStatus(&lt;span style=&quot;color: #000000&quot;&gt;InstanceStatus&lt;/span&gt;.&lt;span style=&quot;color: #871094 ; font-style: italic&quot;&gt;UP&lt;/span&gt;);&lt;br&gt;&lt;span style=&quot;color: #0033b3&quot;&gt;super&lt;/span&gt;.postInit();&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="1270" y="700" width="560" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5n4lhrQsMyBDXj8TD-eI-44" value="&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 10px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 10px&quot;&gt;PeerAwareInstanceRegistry.&lt;span style=&quot;color: rgb(0 , 98 , 122) ; font-size: 10px&quot;&gt;postInit&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="5n4lhrQsMyBDXj8TD-eI-44" value="&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 10px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 10px&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;PeerAwareInstanceRegistry.&lt;span style=&quot;font-size: 10px&quot;&gt;postInit&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="745" y="840" width="260" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5n4lhrQsMyBDXj8TD-eI-45" value="启动定时任务" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
