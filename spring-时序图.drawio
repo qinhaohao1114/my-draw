@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-02-24T03:01:17.882Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="9uqiOHNLqTg7AXqDtQzm" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-01T09:27:49.851Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="RqccZZUs5wZKFfNkPFD1" version="14.4.6" type="github">
   <diagram id="jD7jVm_kFhbCNpo8MqzH" name="Page-1">
-    <mxGraphModel dx="1395" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-6" value="&lt;span style=&quot;font-size: 11px&quot;&gt;annotationApplicationContext&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-6" value="&lt;span style=&quot;font-size: 11px&quot;&gt;annotationApplicationContext&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="80" y="100" width="170" height="2310" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-13" value="&lt;span style=&quot;text-align: left&quot;&gt;register默认的内置配置类和传入的配置类&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-6">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-13" value="&lt;span style=&quot;text-align: left&quot;&gt;register默认的内置配置类和传入的配置类&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-6" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="90" y="70" as="sourcePoint" />
             <mxPoint x="309" y="70" as="targetPoint" />
@@ -16,7 +16,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-199" value="调用application.start方法&lt;br&gt;1、调用LifecycleProcessor.start方法&lt;br&gt;2、发布ContextStartedEvent事件" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-6">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-199" value="调用application.start方法&lt;br&gt;1、调用LifecycleProcessor.start方法&lt;br&gt;2、发布ContextStartedEvent事件" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="90" y="2169.94" as="sourcePoint" />
             <Array as="points">
@@ -25,10 +25,10 @@
             <mxPoint x="95" y="2189.94" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-201" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-6">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-201" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-6" vertex="1">
           <mxGeometry x="80" y="2180" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-205" value="调用close方法&lt;br&gt;1、发布contextCloseEvent事件&lt;br&gt;2、调用LifecycleProcessor.onClose方法&lt;br&gt;3、调用bean的destory方法&lt;br&gt;4、关闭beanFactory" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-6">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-205" value="调用close方法&lt;br&gt;1、发布contextCloseEvent事件&lt;br&gt;2、调用LifecycleProcessor.onClose方法&lt;br&gt;3、调用bean的destory方法&lt;br&gt;4、关闭beanFactory" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="90" y="2230" as="sourcePoint" />
             <Array as="points">
@@ -37,13 +37,13 @@
             <mxPoint x="95" y="2250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-206" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-6">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-206" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-6" vertex="1">
           <mxGeometry x="80" y="2240" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-10" value="annotatedBeanDefinitionReader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-10" value="annotatedBeanDefinitionReader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="314" y="100" width="170" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-27" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;EventListenerMethodProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-27" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;EventListenerMethodProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="87" y="220" as="sourcePoint" />
             <Array as="points">
@@ -52,7 +52,7 @@
             <mxPoint x="92" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-31" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;DefaultEventListenerFactory&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-31" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;DefaultEventListenerFactory&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" edge="1">
           <mxGeometry x="0.0769" y="5" relative="1" as="geometry">
             <mxPoint x="86" y="260" as="sourcePoint" />
             <Array as="points">
@@ -62,7 +62,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-35" value="创建context传入的配置类" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-35" value="创建context传入的配置类" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" edge="1">
           <mxGeometry x="0.3846" y="-17" relative="1" as="geometry">
             <mxPoint x="87" y="310" as="sourcePoint" />
             <Array as="points">
@@ -72,25 +72,25 @@
             <mxPoint x="14" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="320" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-70" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-70" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="270" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-71" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-71" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="230" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-72" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-72" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="190" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-73" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-73" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="140" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-74" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-10">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-74" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-10" vertex="1">
           <mxGeometry x="80" y="90" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-19" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;ConfigurationClassPostProcessor&lt;/font&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-19" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;ConfigurationClassPostProcessor&lt;/font&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="401" y="180" as="sourcePoint" />
             <Array as="points">
@@ -99,7 +99,7 @@
             <mxPoint x="406" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-23" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;AutowiredAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-23" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;AutowiredAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="401" y="230" as="sourcePoint" />
             <Array as="points">
@@ -108,7 +108,7 @@
             <mxPoint x="406" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-25" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;CommonAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-25" value="&lt;pre style=&quot;background-color: rgb(199 , 237 , 204) ; color: rgb(0 , 0 , 0) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;CommonAnnotationBeanPostProcessor&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="401" y="280" as="sourcePoint" />
             <Array as="points">
@@ -117,10 +117,10 @@
             <mxPoint x="406" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-36" value="AbsttractApplicationContext" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-36" value="AbsttractApplicationContext" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="650" y="90" width="160" height="2450" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-41" value="prepareRefresh刷新预处理&lt;br&gt;设置spring容器启动时间，开启活跃状态&lt;br&gt;验证环境信息里一些必须存在的属性" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-41" value="prepareRefresh刷新预处理&lt;br&gt;设置spring容器启动时间，开启活跃状态&lt;br&gt;验证环境信息里一些必须存在的属性" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="420" as="sourcePoint" />
             <Array as="points">
@@ -129,7 +129,7 @@
             <mxPoint x="85" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-43" value="prepareBeanFctory的预准备工作，比如context的类加载,&lt;br&gt;applicationCOntextAwareProcessor" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-43" value="prepareBeanFctory的预准备工作，比如context的类加载,&lt;br&gt;applicationCOntextAwareProcessor" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="485" as="sourcePoint" />
             <Array as="points">
@@ -138,7 +138,7 @@
             <mxPoint x="85" y="505" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-47" value="invokeBeanFactoryPostProcessors，实例化实现了&lt;br&gt;BeanFactoryPostProcessor接口的bean，并调用接口&lt;br&gt;方法，其中会调用configurationClassPostProcessor方类的方法，&lt;br&gt;该类会扫描所以现在的beanDefinition，对所以的配置Definition进行&lt;br&gt;解析加载，包括Bean配置，@import注解的配置等" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-47" value="invokeBeanFactoryPostProcessors，实例化实现了&lt;br&gt;BeanFactoryPostProcessor接口的bean，并调用接口&lt;br&gt;方法，其中会调用configurationClassPostProcessor方类的方法，&lt;br&gt;该类会扫描所以现在的beanDefinition，对所以的配置Definition进行&lt;br&gt;解析加载，包括Bean配置，@import注解的配置等" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="85" y="540" as="sourcePoint" />
             <Array as="points">
@@ -148,7 +148,7 @@
             <mxPoint x="90" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-51" value="注册监听器" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-51" value="注册监听器" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry x="0.3846" y="-14" relative="1" as="geometry">
             <mxPoint x="80" y="650" as="sourcePoint" />
             <Array as="points">
@@ -158,22 +158,22 @@
             <mxPoint x="10" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-64" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-64" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="660" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-65" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-65" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="620" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-66" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-66" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="550" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-67" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-67" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="495" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-68" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-68" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="430" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-196" value="finishRefresh调用&lt;br&gt;1、初始化LefecycleProcessor类并调用onRefresh方法&lt;br&gt;2、发送ContextRefreshedEvent事件" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-196" value="finishRefresh调用&lt;br&gt;1、初始化LefecycleProcessor类并调用onRefresh方法&lt;br&gt;2、发送ContextRefreshedEvent事件" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="85" y="2090" as="sourcePoint" />
             <Array as="points">
@@ -182,10 +182,10 @@
             <mxPoint x="90" y="2110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-200" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-200" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-36" vertex="1">
           <mxGeometry x="75" y="2110" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-49" value="registerBeanPostProcessors，初始化所有BeanPostProcessor类" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-49" value="registerBeanPostProcessors，初始化所有BeanPostProcessor类" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="730" y="700" as="sourcePoint" />
             <Array as="points">
@@ -194,10 +194,10 @@
             <mxPoint x="735" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-56" value="DefaultListBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-56" value="DefaultListBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="1080" y="100" width="140" height="2070" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-59" value="preInstantiateSingletons遍历所有beanNames，&lt;br&gt;加载所有非懒加载的单例bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-59" value="preInstantiateSingletons遍历所有beanNames，&lt;br&gt;加载所有非懒加载的单例bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry x="0.0769" relative="1" as="geometry">
             <mxPoint x="70" y="690" as="sourcePoint" />
             <Array as="points">
@@ -207,7 +207,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-61" value="判断是否为factoryBean，如果为factoryBean，&lt;br&gt;实例化factoryBean，判断是否需要提前初始化，&lt;br&gt;需要则调用getObject加载bean，放入到缓存中" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-61" value="判断是否为factoryBean，如果为factoryBean，&lt;br&gt;实例化factoryBean，判断是否需要提前初始化，&lt;br&gt;需要则调用getObject加载bean，放入到缓存中" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="740" as="sourcePoint" />
             <Array as="points">
@@ -216,19 +216,19 @@
             <mxPoint x="75" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-75" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-75" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" vertex="1">
           <mxGeometry x="65" y="750" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-76" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-76" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" vertex="1">
           <mxGeometry x="65" y="700" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-82" value="doGetBean获取bean" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-56" target="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-82" value="doGetBean获取bean" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" target="nHzR_UdeMCzrL-gVibLt-81" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="70" y="820" as="sourcePoint" />
             <mxPoint x="130" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-188" value="加载完所有单例bean之后，循环所有bean，判断是否为&lt;br&gt;smartInitializaingSingleton类型，是调用&lt;br&gt;smartInitializaingSingleton.afterSingleonsInstantiated方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-188" value="加载完所有单例bean之后，循环所有bean，判断是否为&lt;br&gt;smartInitializaingSingleton类型，是调用&lt;br&gt;smartInitializaingSingleton.afterSingleonsInstantiated方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="1930" as="sourcePoint" />
             <Array as="points">
@@ -237,10 +237,10 @@
             <mxPoint x="75" y="1950" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-189" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-189" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-56" vertex="1">
           <mxGeometry x="65" y="1940" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-57" value="&lt;span style=&quot;text-align: left&quot;&gt;finishBeanFactoryInitialization实例化所有非懒加载的单例bean&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1" source="nHzR_UdeMCzrL-gVibLt-36" target="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-57" value="&lt;span style=&quot;text-align: left&quot;&gt;finishBeanFactoryInitialization实例化所有非懒加载的单例bean&lt;/span&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" source="nHzR_UdeMCzrL-gVibLt-36" target="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="730" y="790" as="sourcePoint" />
             <mxPoint x="790" y="790" as="targetPoint" />
@@ -249,10 +249,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-81" value="AbstractBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-81" value="AbstractBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="1390" y="100" width="120" height="1920" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-84" value="先从缓存中获取，获取到之后判断&lt;br&gt;是否为beanFactory，不是直接返回，&lt;br&gt;是则调用getObject或者从缓存中获取" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-84" value="先从缓存中获取，获取到之后判断&lt;br&gt;是否为beanFactory，不是直接返回，&lt;br&gt;是则调用getObject或者从缓存中获取" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="65" y="820" as="sourcePoint" />
             <Array as="points">
@@ -261,10 +261,10 @@
             <mxPoint x="70" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-85" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-85" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" vertex="1">
           <mxGeometry x="55" y="830" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-87" value="将当前beanName表示为正在被创建" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-87" value="将当前beanName表示为正在被创建" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="930" as="sourcePoint" />
             <Array as="points">
@@ -273,13 +273,13 @@
             <mxPoint x="65" y="950" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-88" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-88" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" vertex="1">
           <mxGeometry x="55" y="890" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-92" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-92" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" vertex="1">
           <mxGeometry x="55" y="940" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-179" value="将当前bean从正在创建的标识集合中移除" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-179" value="将当前bean从正在创建的标识集合中移除" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="1770" as="sourcePoint" />
             <Array as="points">
@@ -288,10 +288,10 @@
             <mxPoint x="65" y="1790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-180" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-180" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" vertex="1">
           <mxGeometry x="55" y="1780" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-184" value="将当前bean从三级和二级缓存中移除，添加到一级缓存" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-184" value="将当前bean从三级和二级缓存中移除，添加到一级缓存" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="1830" as="sourcePoint" />
             <Array as="points">
@@ -300,13 +300,13 @@
             <mxPoint x="65" y="1850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-185" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-81">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-185" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-81" vertex="1">
           <mxGeometry x="55" y="1840" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-89" value="AbstractAutowireCapableBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-89" value="AbstractAutowireCapableBeanFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="1630" y="100" width="210" height="1800" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-94" value="doCreateBean开始创建bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-94" value="doCreateBean开始创建bean" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="990" as="sourcePoint" />
             <Array as="points">
@@ -315,10 +315,10 @@
             <mxPoint x="115" y="1010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-95" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-95" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1000" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-97" value="调用构造方法创建bean&lt;br&gt;1、当只含有带参数构造函数，调用带参数构造函数&lt;br&gt;2、即包含带参数也包含未带参数构造函数，调用无参&lt;br&gt;构造函数&lt;br&gt;3、包含带参数和未带参数，但是在带参数上注解Autowired，&lt;br&gt;则调用带参数的构造函数&lt;br&gt;4、多个构造函数上注解autowired，报错" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-97" value="调用构造方法创建bean&lt;br&gt;1、当只含有带参数构造函数，调用带参数构造函数&lt;br&gt;2、即包含带参数也包含未带参数构造函数，调用无参&lt;br&gt;构造函数&lt;br&gt;3、包含带参数和未带参数，但是在带参数上注解Autowired，&lt;br&gt;则调用带参数的构造函数&lt;br&gt;4、多个构造函数上注解autowired，报错" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="1049" as="sourcePoint" />
             <Array as="points">
@@ -327,10 +327,10 @@
             <mxPoint x="115" y="1069" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-98" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-98" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1060" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-103" value="检查是否允许循环依赖，是否单例，是否正在创建，是，&lt;br&gt;则将当前bean包装成ObjectFactory放入三级缓存" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-103" value="检查是否允许循环依赖，是否单例，是否正在创建，是，&lt;br&gt;则将当前bean包装成ObjectFactory放入三级缓存" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="105" y="1140" as="sourcePoint" />
             <Array as="points">
@@ -339,17 +339,17 @@
             <mxPoint x="110" y="1160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-104" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-104" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1150" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-106" value="针对需要自动注入的字段和方法注入的依赖进行注入，这一步&lt;br&gt;可以进行扩展：&lt;br&gt;1、循环调用InstantiationAwareBeanPostProcessor.postProcess&lt;br&gt;ties方法进行注入，这一步可以增加自己的实现类进行注入" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;align=left;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89" target="nHzR_UdeMCzrL-gVibLt-105">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-106" value="针对需要自动注入的字段和方法注入的依赖进行注入，这一步&lt;br&gt;可以进行扩展：&lt;br&gt;1、循环调用InstantiationAwareBeanPostProcessor.postProcess&lt;br&gt;ties方法进行注入，这一步可以增加自己的实现类进行注入" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;align=left;" parent="nHzR_UdeMCzrL-gVibLt-89" target="nHzR_UdeMCzrL-gVibLt-105" edge="1">
           <mxGeometry x="-0.7841" width="80" relative="1" as="geometry">
             <mxPoint x="100" y="1230" as="sourcePoint" />
             <mxPoint x="180" y="1230" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-113" value="针对propertyValues进行注入&lt;br&gt;1、对于Autowired但是带有set方法的属性，也会优先包装&lt;br&gt;成该类型进行注入&lt;br&gt;2、在beanDefinition中我们可以设置propertyValue、&lt;br&gt;PropertyReference,也会在这一步进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-113" value="针对propertyValues进行注入&lt;br&gt;1、对于Autowired但是带有set方法的属性，也会优先包装&lt;br&gt;成该类型进行注入&lt;br&gt;2、在beanDefinition中我们可以设置propertyValue、&lt;br&gt;PropertyReference,也会在这一步进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="105" y="1280" as="sourcePoint" />
             <Array as="points">
@@ -358,10 +358,10 @@
             <mxPoint x="110" y="1300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-114" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-114" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1290" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-123" value="执行Aware相关类方法&lt;br&gt;1、BeanNameAware.setBeanName&lt;br&gt;2、BeanClassLoaderAware.setBeanClassLoader&lt;br&gt;3、BeanFactoryAware.setBeanFactory" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-123" value="执行Aware相关类方法&lt;br&gt;1、BeanNameAware.setBeanName&lt;br&gt;2、BeanClassLoaderAware.setBeanClassLoader&lt;br&gt;3、BeanFactoryAware.setBeanFactory" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="105" y="1370" as="sourcePoint" />
             <Array as="points">
@@ -370,10 +370,10 @@
             <mxPoint x="110" y="1390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-124" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-124" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1380" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-128" value="BeanPostProcessor.postProcessBeforeInitialization前置方法&lt;br&gt;1、beanFactory初始化的时候会注入ApplicationContextAwareProcessor,&lt;br&gt;该类定义了执行Aware相关接口的方法&lt;br&gt;2、environmentAware,serEnvironment&lt;br&gt;3、EmbeddedValueResolverAware.setEmbeddedValueResolver&lt;br&gt;4、ResourceLoaderAware.setResourceLoader&lt;br&gt;5、ApplicationEventPublisherAware.setApplicationEventPublisher&lt;br&gt;6、MessageSurceAware.setMessageSource&lt;br&gt;7、ApplicationContextAware.setApplicationContext" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-128" value="BeanPostProcessor.postProcessBeforeInitialization前置方法&lt;br&gt;1、beanFactory初始化的时候会注入ApplicationContextAwareProcessor,&lt;br&gt;该类定义了执行Aware相关接口的方法&lt;br&gt;2、environmentAware,serEnvironment&lt;br&gt;3、EmbeddedValueResolverAware.setEmbeddedValueResolver&lt;br&gt;4、ResourceLoaderAware.setResourceLoader&lt;br&gt;5、ApplicationEventPublisherAware.setApplicationEventPublisher&lt;br&gt;6、MessageSurceAware.setMessageSource&lt;br&gt;7、ApplicationContextAware.setApplicationContext" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="1470" as="sourcePoint" />
             <Array as="points">
@@ -382,10 +382,10 @@
             <mxPoint x="115" y="1490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-129" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-129" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1480" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-140" value="如果包含init方法，调用init方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-140" value="如果包含init方法，调用init方法" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="105" y="1600" as="sourcePoint" />
             <Array as="points">
@@ -394,10 +394,10 @@
             <mxPoint x="110" y="1620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-161" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-161" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1610" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-163" value="调用InitializaingBean.afterPropertiesSet" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-163" value="调用InitializaingBean.afterPropertiesSet" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="105" y="1560" as="sourcePoint" />
             <Array as="points">
@@ -406,10 +406,10 @@
             <mxPoint x="110" y="1580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-164" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-164" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1570" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-168" value="调用beanPostProcessor.postProcessAferInitialization方法&lt;br&gt;1、aop设置的代理类就是在这一步创建" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-168" value="调用beanPostProcessor.postProcessAferInitialization方法&lt;br&gt;1、aop设置的代理类就是在这一步创建" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="1660" as="sourcePoint" />
             <Array as="points">
@@ -418,23 +418,23 @@
             <mxPoint x="115" y="1680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-169" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-169" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" vertex="1">
           <mxGeometry x="100" y="1670" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-173" value="返回bean" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-89">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-173" value="返回bean" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-89" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="100" y="1720" as="sourcePoint" />
             <mxPoint x="-180" y="1720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-90" value="createBean创建bean" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-90" value="createBean创建bean" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="1450" y="1080" as="sourcePoint" />
             <mxPoint x="1730" y="1080" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-91" value="处理dependsOn" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-91" value="处理dependsOn" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1460" y="990" as="sourcePoint" />
             <Array as="points">
@@ -444,10 +444,10 @@
             <mxPoint x="1465" y="1010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-105" value="AutowiredAnnotationBeanPostProcessor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-105" value="AutowiredAnnotationBeanPostProcessor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" vertex="1">
           <mxGeometry x="2000" y="100" width="222" height="1310" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-108" value="找到被autowired注解的方法和属性，包装成InjectElement&lt;br&gt;循环调用inject方法进行注入，这一步会在beanFactory中查找&lt;br&gt;依赖的类型，最后通过反射调用属性、方法进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="nHzR_UdeMCzrL-gVibLt-105">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-108" value="找到被autowired注解的方法和属性，包装成InjectElement&lt;br&gt;循环调用inject方法进行注入，这一步会在beanFactory中查找&lt;br&gt;依赖的类型，最后通过反射调用属性、方法进行注入" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-105" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="111" y="1250" as="sourcePoint" />
             <Array as="points">
@@ -456,32 +456,74 @@
             <mxPoint x="116" y="1270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-109" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" vertex="1" parent="nHzR_UdeMCzrL-gVibLt-105">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-109" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="nHzR_UdeMCzrL-gVibLt-105" vertex="1">
           <mxGeometry x="106" y="1260" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-186" value="返回bean" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1" target="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-186" value="返回bean" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" target="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1450" y="2000" as="sourcePoint" />
             <mxPoint x="1370" y="2000" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-190" value="执行结束" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1" source="nHzR_UdeMCzrL-gVibLt-56">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-190" value="执行结束" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" source="nHzR_UdeMCzrL-gVibLt-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="810" y="2150" as="sourcePoint" />
             <mxPoint x="730" y="2150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-197" value="执行完毕" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1" source="nHzR_UdeMCzrL-gVibLt-36">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-197" value="执行完毕" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" source="nHzR_UdeMCzrL-gVibLt-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="2240" as="sourcePoint" />
             <mxPoint x="180" y="2240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nHzR_UdeMCzrL-gVibLt-37" value="refresh方法" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" edge="1" parent="1">
+        <mxCell id="nHzR_UdeMCzrL-gVibLt-37" value="refresh方法" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;" parent="1" edge="1">
           <mxGeometry width="60" relative="1" as="geometry">
             <mxPoint x="175" y="470" as="sourcePoint" />
             <mxPoint x="735" y="470" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-1" value="refreshScope原理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-2" value="&lt;h1&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;1、在创建beanDefinition的时候，如果&lt;span style=&quot;background-color: rgb(199 , 237 , 204) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;ScopedProxyMode不为no，会通过&lt;/span&gt;&lt;span style=&quot;background-color: rgb(199 , 237 , 204) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;ScopedProxyUtils创建，这一步会把原本的beanDefinition替换成&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(199 , 237 , 204) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace&quot;&gt;ScopedProxyFactoryBean，那么在注入的时候事实上注入的是&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; background-color: rgb(199 , 237 , 204)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;ScopedProxyFactoryBean&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2585" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-3" value="ipService" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="2795" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-4" value="&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; text-align: left ; background-color: rgb(199 , 237 , 204)&quot;&gt;ScopedProxyFactoryBean&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="2800" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-6" value="" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.025;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="r2Z-qkqQAD-YagwM_JSw-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="290" y="2820" as="sourcePoint" />
+            <mxPoint x="370" y="2820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-7" value="这个为signle的" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="2790" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-8" value="scopedTarget.ipService" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="2920" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-9" value="&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; text-align: left ; background-color: rgb(199 , 237 , 204)&quot;&gt;ipService&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2920" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-10" value="这个为scope为refresh的，所以不会创建好放入spring容器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="2890" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-11" value="" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.025;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="306.75" y="2946.5" as="sourcePoint" />
+            <mxPoint x="430" y="2948.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-12" value="所以注入的时候事实上是通过&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; text-align: left ; background-color: rgb(199 , 237 , 204)&quot;&gt;ScopedProxyFactoryBean.getObject获取，这一步获取的是代理对象&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="3040" width="570" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r2Z-qkqQAD-YagwM_JSw-15" value="通过容器获取对象的时候，会通过refreshScope进行获取，此时会创建对象，然后缓存下来以备下次使用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="3090" width="570" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
