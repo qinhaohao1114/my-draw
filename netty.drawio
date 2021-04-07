@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T09:01:30.890Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="IfdV_kwvkUmgvf4Mi4ez" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-07T09:20:08.276Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="VXJsZCNNJKxh2279aBr9" version="14.4.6" type="github">
   <diagram id="RVaA4yIAQ1JbRRIvG2Ix" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="110" y="70" width="780" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nUSIIqcSna3ShGaQ4jSA-2" value="&lt;p align=&quot;center&quot; style=&quot;font-size: medium ; margin: 0px ; line-height: 1px&quot;&gt;&lt;span style=&quot;font-size: 10pt ; color: rgb(25 , 25 , 25)&quot;&gt;ServerBootstrap.initAndRegister&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="190" width="290" height="60" as="geometry" />
+          <mxGeometry x="120" y="190" width="460" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nUSIIqcSna3ShGaQ4jSA-3" value="&lt;p align=&quot;center&quot; style=&quot;font-size: medium ; margin: 0px ; line-height: 1px&quot;&gt;&lt;span style=&quot;font-size: 10pt ; color: rgb(25 , 25 , 25)&quot;&gt;doBind0&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="190" width="120" height="60" as="geometry" />
@@ -18,6 +18,27 @@
         </mxCell>
         <mxCell id="nUSIIqcSna3ShGaQ4jSA-7" value="&lt;p style=&quot;margin: 0px ; font-size: 8px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;arial&amp;#34; ; font-size: 8px&quot;&gt;在&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono,monospace&amp;#34; ; font-size: 8px&quot;&gt;pipeline中添加自定义handler和ServerBootstrapAcceptor&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-60" y="350" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-8" value="&lt;pre style=&quot;background-color: #c7edcc ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 11.3pt&quot;&gt;config().group().register(channel)&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="330" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-9" value="AbstractChannel.register" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="430" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-10" value="这一步会调用eventloop.excute，&lt;br&gt;并把doRegister0包装成一个任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="430" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-11" value="SingleThreadEventExecutor.excute" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="540" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-12" value="1、将任务添加到队列&lt;br&gt;&lt;div&gt;&lt;span&gt;2、判断线程是否启动，没有则启动线程&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;3、启动之后执行&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;text-align: center&quot;&gt;SingleThreadEventExecutor.run方法&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="540" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-13" value="NioEventLoop.run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-14" value="该类为single的子类，重写的run方法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="670" width="240" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
