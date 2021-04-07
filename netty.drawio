@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T09:25:56.737Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="SZN7DPKhU6nu0dqif6I2" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-07T09:44:49.905Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="cxeBblzMbTpazx6Y9qmf" version="14.4.6" type="github">
   <diagram id="RVaA4yIAQ1JbRRIvG2Ix" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,11 +37,17 @@
         <mxCell id="nUSIIqcSna3ShGaQ4jSA-13" value="NioEventLoop.run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="650" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="nUSIIqcSna3ShGaQ4jSA-14" value="1、该类为single的子类，重写的run方法&lt;br&gt;2、该方法会一直循环，从队列中获取任务，如果有，则返回selectNow的返回值，否则返回-1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-14" value="1、该类为single的子类，重写的run方法&lt;br&gt;2、该方法会一直循环，默认1.5ms轮询一次，从队列中获取任务，如果有，则返回selectNow的返回值，否则返回-1&lt;br&gt;3、如果返回-1，证明队列没有任务，此时会调用slect进行阻塞.&lt;br&gt;4、当队列有任务或者说selector接收到chnnel响应之后，会结束阻塞，此时会先处理网络事件，然后再处理队列的任务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="430" y="670" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nUSIIqcSna3ShGaQ4jSA-15" value="&lt;h1&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;selector.select()，获取准备好的channel，&lt;/div&gt;&lt;div&gt;selectNow，非阻塞的获取，没有返回0&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="85" y="590" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-18" value="&lt;p align=&quot;center&quot; style=&quot;font-size: medium ; margin: 0px ; line-height: 1px&quot;&gt;&lt;span style=&quot;font-size: 10pt ; color: rgb(25 , 25 , 25)&quot;&gt;select监听acceptor连接&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="810" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nUSIIqcSna3ShGaQ4jSA-19" value="&lt;p align=&quot;center&quot; style=&quot;font-size: medium ; margin: 0px ; line-height: 1px&quot;&gt;&lt;span style=&quot;font-size: 10pt ; color: rgb(25 , 25 , 25)&quot;&gt;runAllTasks处理任务队列&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="810" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
