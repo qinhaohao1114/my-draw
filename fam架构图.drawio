@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-12T09:10:02.746Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="lmvqp_9Lx14IIFMP6Yit" version="14.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-12T09:12:57.587Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="NARBJE6sQbn2mWH4bIpQ" version="14.4.6" type="github">
   <diagram id="_t7BkViaL5DDX25aPvyo" name="Page-1">
     <mxGraphModel dx="1773" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,22 +73,30 @@
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-34" value="set" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="910" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EFO6HXJuC6sNuG9AyPNB-35" target="EFO6HXJuC6sNuG9AyPNB-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-35" value="get" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="530" y="910" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EFO6HXJuC6sNuG9AyPNB-37" target="EFO6HXJuC6sNuG9AyPNB-41">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-48" value="获取到" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EFO6HXJuC6sNuG9AyPNB-43">
+          <mxGeometry x="-0.2857" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-37" value="t.threadLocals" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="140" y="1010" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-38" value="从当前线程中获取ThreadLocalMap" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="234" y="1010" width="240" height="70" as="geometry" />
+          <mxGeometry x="230" y="1015" width="240" height="70" as="geometry" />
         </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-40" value="创建ThreadLocalMap,并把当前threadLocal作为first放到Map中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-90" y="1150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EFO6HXJuC6sNuG9AyPNB-41" value="有，设置值，利用当前的threadLocal算出hash，定位到entry数组下标，按照线性探测寻找空位插入" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-41" value="有，设置值，利用当前的threadLocal算出hash，定位到entry数组下标，按照线性探测寻找空位插入,过程中替换掉失效的key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="1160" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EFO6HXJuC6sNuG9AyPNB-42" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EFO6HXJuC6sNuG9AyPNB-37" target="EFO6HXJuC6sNuG9AyPNB-40">
@@ -96,6 +104,20 @@
             <mxPoint x="-60" y="1060" as="sourcePoint" />
             <mxPoint x="-10" y="1010" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-47" value="没获取到" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EFO6HXJuC6sNuG9AyPNB-42">
+          <mxGeometry x="0.0148" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-44" value="t.threadLocals" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1010" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-49" value="有，设置值，利用当前的threadLocal算出hash，定位到entry数组下标，按照线性探测寻找空位插入,过程中替换掉失效的key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1170" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EFO6HXJuC6sNuG9AyPNB-50" value="创建ThreadLocalMap,并把当前threadLocal作为可以，null作为值放到Map中，同时返回null" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1170" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
